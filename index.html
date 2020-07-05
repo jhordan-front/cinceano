@@ -5,7 +5,47 @@
  	<title>Document</title>
  	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
  	<link rel="stylesheet" href="css/style.css">
+ 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+ 	  <link rel="stylesheet" href="css/swiper.min.css">
  	<script src="https://kit.fontawesome.com/507b78cca7.js" crossorigin="anonymous"></script>
+ 	<style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+</style>
+
  </head>
  <body>
  	<header>
@@ -52,52 +92,864 @@
  					
  				</div>
  			</div>
- 		</div>
- 		<div class="fechas_futbol">
- 			<div class="row">
- 				<div class="ultimo_partido">
- 					<p class="fecha">02 FEBR</p>
- 					<div class="local">
- 						<img src="" alt="">
- 						<p class="nombre_equipo">Cantolao</p>
- 						<h4 class="resultado_number">0</h4>
- 					</div>
- 					<span>:</span>
- 					<div class="visitante">
- 						<h4 class="resultado_number">0</h4>
- 						<p class="nombre_equipo">Cantolao</p>
- 						<img src="" alt="">
- 					</div>
- 					<p class="fecha">02 FEBR</p>
- 				</div>
- 				<div class="siguiente_partido">
- 					<p class="fecha">02 FEBR</p>
- 					<div class="local">
- 						<img src="" alt="">
- 						<p class="nombre_equipo">Cantolao</p>
- 					</div>
- 					<span>VS</span>
- 					<div class="visitante">
- 						<p class="nombre_equipo">Cantolao</p>
- 						<img src="" alt="">
- 					</div>
- 					<p class="fecha">02 FEBR</p>
- 				</div>
- 				<div class="boton_entradas">
- 					<a href="" class="boton_hover">
- 						<buttom>Entradas</buttom>
- 					</a>
- 				</div>
- 			</div>
+ 			<div class="fechas_futbol">
+	 			<div class="flew_wrap">
+	 				<div class="ultimo_partido">
+	 					<p class="fecha">02 FEBR</p>
+	 					<div class="local">
+	 						<img src="img/logo_cantolao.png" alt="">
+	 						<p class="nombre_equipo">Cantolao</p>
+	 						<h4 class="resultado_number">0</h4>
+	 					</div>
+	 					<span>:</span>
+	 					<div class="visitante">
+	 						<h4 class="resultado_number">0</h4>
+	 						<p class="nombre_equipo">Cantolao</p>
+	 						<img src="img/logo_cinceano.png" alt="">
+	 					</div>
+	 				</div>
+	 				<div class="siguiente_partido">
+	 					<p class="fecha">02 FEBR</p>
+	 					<div class="local">
+	 						<img src="img/logo_cinceano.png" alt="">
+	 						<p class="nombre_equipo">Cantolao</p>
+	 					</div>
+	 					<span>VS</span>
+	 					<div class="visitante">
+	 						<p class="nombre_equipo">Cantolao</p>
+	 						<img src="img/logo_alianza.png" alt="">
+	 					</div>
+	 				</div>
+	 				<div class="boton_entradas">
+	 					<a href="" class="boton_hover">
+	 						<buttom>Entradas</buttom>
+	 					</a>
+	 				</div>
+	 			</div>
+	 		</div>
  		</div>
  	</section>
  	<section class="partidos">
  		<div class="contenedor">
- 			<h2 class="subtitulos_section"></h2>
+ 			<div class="subtitulo">
+ 				<h2 class="subtitulos_section">partidos</h2>
+ 				<a class="texto_subtitulo" href="">Ver todos lo partidos</a>
+ 			</div>
+ 			<div class="row">
+ 				<div class="items_partido">
+ 					<div class="item_partido jugado">
+ 						<div class="logos_equipo">
+ 							<img src="img/logo_cantolao.png" alt="">
+ 							<img src="img/logo_cinceano.png" alt="">
+ 							<div class="resultado">
+ 								<p class="marcador">2</p>
+ 								<span style="color: #dd1c22">:</span>
+ 								<p class="marcador">3</p>
+ 							</div>
+ 						</div>
+ 						<div class="datos_partido">
+ 							<h3>Catolao vs Cinceano</h3>
+ 							<h4 class="nombre_liga">liga 1</h4>
+ 							<p>Domingo 02 febrero, 2020</p>
+ 							<p>3:00 pm, Miguel Grau</p>
+ 							<div class="botones">
+ 								<a class="boton_vermas" href="">Ver mas</a>
+ 								<a class="boton_entradas back_red" href="">entradas</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_partido">
+ 						<div class="logos_equipo">
+ 							<img src="img/logo_cantolao.png" alt="">
+ 							<img src="img/logo_cinceano.png" alt="">
+ 							<div class="resultado">
+ 								<p class="marcador">2</p>
+ 								<span style="color: #dd1c22">:</span>
+ 								<p class="marcador">3</p>
+ 							</div>
+ 						</div>
+ 						<div class="datos_partido">
+ 							<h3>Catolao vs Cinceano</h3>
+ 							<h4 class="nombre_liga">liga 1</h4>
+ 							<p>Domingo 02 febrero, 2020</p>
+ 							<p>3:00 pm, Miguel Grau</p>
+ 							<div class="botones">
+ 								<a class="boton_vermas" href="">Ver mas</a>
+ 								<a class="boton_entradas back_red" href="">entradas</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_partido">
+ 						<div class="logos_equipo">
+ 							<img src="img/logo_cantolao.png" alt="">
+ 							<img src="img/logo_cinceano.png" alt="">
+ 							<div class="resultado">
+ 								<p class="marcador">2</p>
+ 								<span style="color: #dd1c22">:</span>
+ 								<p class="marcador">3</p>
+ 							</div>
+ 						</div>
+ 						<div class="datos_partido">
+ 							<h3>Catolao vs Cinceano</h3>
+ 							<h4 class="nombre_liga">liga 1</h4>
+ 							<p>Domingo 02 febrero, 2020</p>
+ 							<p>3:00 pm, Miguel Grau</p>
+ 							<div class="botones">
+ 								<a class="boton_vermas" href="">Ver mas</a>
+ 								<a class="boton_entradas back_red" href="">entradas</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_partido">
+ 						<div class="logos_equipo">
+ 							<img src="img/logo_cantolao.png" alt="">
+ 							<img src="img/logo_cinceano.png" alt="">
+ 							<div class="resultado">
+ 								<p class="marcador">2</p>
+ 								<span style="color: #dd1c22">:</span>
+ 								<p class="marcador">3</p>
+ 							</div>
+ 						</div>
+ 						<div class="datos_partido">
+ 							<h3>Catolao vs Cinceano</h3>
+ 							<h4 class="nombre_liga">liga 1</h4>
+ 							<p>Domingo 02 febrero, 2020</p>
+ 							<p>3:00 pm, Miguel Grau</p>
+ 							<div class="botones">
+ 								<a class="boton_vermas" href="">Ver mas</a>
+ 								<a class="boton_entradas back_red" href="">entradas</a>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div> 				
+ 			</div>
+ 			
  		</div>
  	</section>
+ 	<section class="videos">
+ 		<div class="contenedor">
+ 			<div class="subtitulo">
+ 				<h2 class="subtitulos_section white">videos destacados</h2>
+ 				<a class="texto_subtitulo" href="">Ver todos lo partidos</a>
+ 			</div> 	
+ 			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<a href="">
+			        		<img src="img/foto_video.png" alt="">
+			        		<p></p>
+			        		<div class="tiempovideo">
+			        			<div class="logo_play"></div>
+			        			<p>1:40</p><span>min</span>
+			        		</div>
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="">
+			        		<img src="img/foto_video.png" alt="">
+			        		<p></p>
+			        		<div class="tiempovideo">
+			        			<div class="logo_play"></div>
+			        			<p>1:40</p><span>min</span>
+			        		</div>
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="">
+			        		<img src="img/foto_video.png" alt="">
+			        		<p></p>
+			        		<div class="tiempovideo">
+			        			<div class="logo_play"></div>
+			        			<p>1:40</p><span>min</span>
+			        		</div>
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="">
+			        		<img src="img/foto_video.png" alt="">
+			        		<p></p>
+			        		<div class="tiempovideo">
+			        			<div class="logo_play"></div>
+			        			<p>1:40</p><span>min</span>
+			        		</div>
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="">
+			        		<img src="img/foto_video.png" alt="">
+			        		<p></p>
+			        		<div class="tiempovideo">
+			        			<div class="logo_play"></div>
+			        			<p>1:40</p><span>min</span>
+			        		</div>
+			        	</a>
+			        </div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			    <!-- Add Arrows -->
+			    <div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>
+			</div>		
+ 		</div>
+ 		  <!-- Swiper JS -->
+		  <script src="js/swiper.min.js"></script>
+
+		  <!-- Initialize Swiper -->
+		<script>
+		    var swiper = new Swiper('.swiper-container', {
+		      slidesPerView: 3,
+		      spaceBetween: 30,
+		      slidesPerGroup: 3,
+		      loop: true,
+		      loopFillGroupWithBlank: true,
+		      pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+		      },
+		      navigation: {
+	        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		      },
+		    });
+		</script>
+ 	</section>
+ 	<section class="noticias">
+ 		<div class="contenedor">
+ 			<div class="subtitulo">
+ 				<h2 class="subtitulos_section dark">noticias</h2>
+ 				<a class="texto_subtitulo" href="">Ver todos lo partidos</a>
+ 			</div> 
+ 			<div class="row flew_wrap">
+ 				<div class="noticias ultimas col-2">
+ 					<div class="">
+ 						<img src="img/FOTO 2 CIENCIANO@3x.png" alt="">
+ 					</div>
+ 					<div class="">
+ 						<h2 class="subtitulo_noticia">Lorem Ipsum is simply
+						dummy textof the printing.</h2>
+						<p class="texto_noticia">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						<div class="publicacion_hora">
+							<p class="hora_publicada">22hr</p>
+							<p>Entrevista</p>
+						</div>					
+ 					</div>
+ 				</div>
+ 				<div class="noticias ultimas col-2">
+ 					<div class="">
+ 						<img src="img/FOTO 2 CIENCIANO@3x.png" alt="">
+ 					</div>
+ 					<div class="">
+ 						<h2 class="subtitulo_noticia">Lorem Ipsum is simply
+						dummy textof the printing.</h2>
+						<p class="texto_noticia">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						<div class="publicacion_hora">
+							<p class="hora_publicada">22hr</p>
+							<p>Entrevista</p>
+						</div>					
+ 					</div>
+ 				</div>
+ 				<div class="noticias col-4">
+ 					<div class="col-2">
+ 						<img src="" alt="">
+ 					</div>
+ 					<div class="col-2">
+ 						<h2 class="subtitulo_noticia">Lorem Ipsum is simply
+						dummy textof the printing.</h2>
+						<p class="texto_noticia">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						<div class="publicacion_hora">
+							<div class="entrevistador">
+								<div class="perfil">
+									<img src="" alt="">
+								</div>
+								<div class="datos_perfil">
+									<p class="nombre">
+										Marcos Diaz
+									</p>
+									<div class="instagram_link">
+										<a href="#">@luistejada</a>
+									</div>
+								</div>
+							</div>
+							<p class="tio_noticia">Multimedia</p>
+						</div>					
+ 					</div>
+ 				</div>
+ 				<div class="noticias col-4">
+ 					<div class="col-2">
+ 						<img src="" alt="">
+ 					</div>
+ 					<div class="col-2">
+ 						<h2 class="subtitulo_noticia">Lorem Ipsum is simply
+						dummy textof the printing.</h2>
+						<p class="texto_noticia">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						<div class="publicacion_hora">
+							<div class="entrevistador">
+								<div class="perfil">
+									<img src="" alt="">
+								</div>
+								<div class="datos_perfil">
+									<p class="nombre">
+										Marcos Diaz
+									</p>
+									<div class="instagram_link">
+										<a href="#">@luistejada</a>
+									</div>
+								</div>
+							</div>
+							<p class="tio_noticia">Multimedia</p>
+						</div>					
+ 					</div>
+ 				</div>
+ 				<div class="noticias col-4">
+ 					<div class="col-2">
+ 						<img src="" alt="">
+ 					</div>
+ 					<div class="col-2">
+ 						<h2 class="subtitulo_noticia">Lorem Ipsum is simply
+						dummy textof the printing.</h2>
+						<p class="texto_noticia">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						<div class="publicacion_hora">
+							<div class="entrevistador">
+								<div class="perfil">
+									<img src="" alt="">
+								</div>
+								<div class="datos_perfil">
+									<p class="nombre">
+										Marcos Diaz
+									</p>
+									<div class="instagram_link">
+										<a href="#">@luistejada</a>
+									</div>
+								</div>
+							</div>
+							<p class="tio_noticia">Multimedia</p>
+						</div>					
+ 					</div>
+ 				</div>
+ 				<div class="noticias col-4">
+ 					<div class="col-2">
+ 						<img src="" alt="">
+ 					</div>
+ 					<div class="col-2">
+ 						<h2 class="subtitulo_noticia">Lorem Ipsum is simply
+						dummy textof the printing.</h2>
+						<p class="texto_noticia">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+						<div class="publicacion_hora">
+							<div class="entrevistador">
+								<div class="perfil">
+									<img src="" alt="">
+								</div>
+								<div class="datos_perfil">
+									<p class="nombre">
+										Marcos Diaz
+									</p>
+									<div class="instagram_link">
+										<a href="#">@luistejada</a>
+									</div>
+								</div>
+							</div>
+							<p class="tio_noticia">Multimedia</p>
+						</div>					
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<a class="back_transparent" href="#">mas noticias</a>
+ 		</div>
+ 	</section>
+ 	<section class="jugadores">
+ 		<div class="contenedor">
+ 			<div class="subtitulo">
+ 				<h2 class="subtitulos_section dark">jugadores</h2>
+ 				<a class="texto_subtitulo" href="">Ver todos los jugadores</a>
+ 			</div> 
+ 			<div class="row">
+ 				<div class="col izq">
+ 					<img src="img/foto perfil - aaaa@3x.png" alt="">
+ 					<div class="col-4">
+ 						<p class="numero_jugador">8</p>
+ 						<h2 class="nombre_jugador">Juan Mata</h2>
+ 						<h3 class="posicion">delantero</h3>
+ 						<a href="" class="boton_vermas">
+ 							Ver mas
+ 						</a>
+ 					</div>
+ 				</div>
+ 				<div class="col der">
+ 					<div class="col-2">
+ 						<h3>2018 - 19 ESTADÍSTICAS</h3>
+ 						<ul>
+ 							<li class="datos_partido">
+ 								<h4>
+ 									Partidos jugados
+ 								</h4>
+ 								<p>22</p>
+ 							</li>
+ 							<li class="datos_partido">
+ 								<h4>
+ 									Partidos jugados
+ 								</h4>
+ 								<p>22</p>
+ 							</li>
+ 							<li class="datos_partido">
+ 								<h4>
+ 									Partidos jugados
+ 								</h4>
+ 								<p>22</p>
+ 							</li>
+ 							<li class="datos_partido">
+ 								<h4>
+ 									Partidos jugados
+ 								</h4>
+ 								<p>22</p>
+ 							</li>
+ 							<li class="datos_partido">
+ 								<h4>
+ 									Partidos jugados
+ 								</h4>
+ 								<p>22</p>
+ 							</li>
+ 						</ul>
+ 						<div class="circular_progreso">
+ 							<div class="item_circular">
+ 								<div class="estadistica_jugador"><p>26</p></div>
+ 								<p>versatilidad</p>
+ 							</div>
+ 							<div class="item_circular">
+ 								<div class="estadistica_jugador"><p>26</p></div>
+ 								<p>versatilidad</p>
+ 							</div>
+ 							<div class="item_circular">
+ 								<div class="estadistica_jugador"><p>26</p></div>
+ 								<p>versatilidad</p>
+ 							</div>
+ 						</div>
+ 					</div>
+ 					<div class="col-2">
+ 						<ul class="lista_jugadores">
+ 							<li>
+ 								<img src="img/juanmata.png" alt="">
+ 								<div class="nombres_jugador">
+ 									<p>juan mata</p>
+ 									<h6 class="posicion">
+ 										<p class="numerolist_jugador">1</p>
+ 										<p class="posicion_list">delantero</p>
+ 									</h6>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<img src="img/juanmata.png" alt="">
+ 								<div class="nombres_jugador">
+ 									<p>juan mata</p>
+ 									<h6 class="posicion">
+ 										<p class="numerolist_jugador">6</p>
+ 										<p class="posicion_list">delantero</p>
+ 									</h6>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<img src="img/juanmata.png" alt="">
+ 								<div class="nombres_jugador">
+ 									<p>juan mata</p>
+ 									<h6 class="posicion">
+ 										<p class="numerolist_jugador">7</p>
+ 										<p class="posicion_list">delantero</p>
+ 									</h6>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<img src="img/juanmata.png" alt="">
+ 								<div class="nombres_jugador">
+ 									<p>juan mata</p>
+ 									<h6 class="posicion">
+ 										<p class="numerolist_jugador">5</p>
+ 										<p class="posicion_list">delantero</p>
+ 									</h6>
+ 								</div>
+ 							</li>
+ 							<li>
+ 								<img src="img/juanmata.png" alt="">
+ 								<div class="nombres_jugador">
+ 									<p>juan mata</p>
+ 									<h6 class="posicion">
+ 										<p class="numerolist_jugador">8</p>
+ 										<p class="posicion_list">delantero</p>
+ 									</h6>
+ 								</div>
+ 							</li>
+ 						</ul>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section class="estadisticas">
+ 		<div class="contenedor">
+ 			<div class="subtitulo">
+ 				<h2 class="subtitulos_section dark">ESTADÍSTICAS del jugador</h2>
+ 				<a class="texto_subtitulo" href="">Ver todos las estadísticas de los jugadores</a>
+ 			</div> 
+ 			<div class="row flew_wrap">
+ 				<div class="col-4">
+ 					<h3 class="tipo-estadistica">Goles</h3>
+ 					<div class="dato_jugador">
+ 						<div class="nombre_estadistica">
+ 							
+ 						</div>
+ 						<img src="img/juanmata.png" alt="">
+ 					</div>
+ 					<ul class="otro_jugador">
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 				<div class="col-4">
+ 					<h3 class="tipo-estadistica">Goles</h3>
+ 					<div class="dato_jugador">
+ 						<div class="nombre_estadistica">
+ 							
+ 						</div>
+ 						<img src="img/juanmata.png" alt="">
+ 					</div>
+ 					<ul class="otro_jugador">
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 				<div class="col-4">
+ 					<h3 class="tipo-estadistica">Goles</h3>
+ 					<div class="dato_jugador">
+ 						<div class="nombre_estadistica">
+ 							
+ 						</div>
+ 						<img src="img/juanmata.png" alt="">
+ 					</div>
+ 					<ul class="otro_jugador">
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 					</ul>
+ 				</div>
+ 				<div class="col-4">
+ 					<h3 class="tipo-estadistica">Goles</h3>
+ 					<div class="dato_jugador">
+ 						<div class="nombre_estadistica">
+ 							
+ 						</div>
+ 						<img src="img/juanmata.png" alt="">
+ 					</div>
+ 					<ul class="otro_jugador">
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 						</li>
+ 						<li>
+ 							<h4>jesse ligard</h4>
+ 							<p>10</p>
+ 					</ul>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section class="banner_compra">
+ 		<div class="contenedor">
+ 			<div class="row">
+ 				<div class="col izq">
+ 					<img src="img/logo_na.png" alt="">
+ 					<h2>RENUEVA TU ARMARIO</h2>
+ 					<a class="boton_entradas" href="">Comprar ahora</a>
+ 				</div>
+ 				<div class="col der">
+ 					<img src="img/banner_compra.png" alt="">
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section class="redes_sociales">
+ 		<div class="contenedor">
+ 			<div class="subtitulo">
+ 				<h2 class="subtitulos_section dark">rEDES SOCIALES</h2>
+ 				<a class="texto_subtitulo" href="">Ver todos las redes sociales</a>
+ 			</div> 
+ 			<div class="row">
+ 				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<a href="">
+				        		<img src="img/foto_video.png" alt="">
+				        		<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+				        		<div class="red_social">
+				        			<a href="">
+				        				<img src="img/instagram.png" alt="">
+				        				<div class="des_redsocial">
+				        					<h5 class="nombre_red">Club Cienciano</h5>
+				        					<p class="fechapublicada">11-02-20</p>
+				        				</div>
+				        			</a>
+				        		</div>
+				        	</a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="">
+				        		<img src="img/foto_video.png" alt="">
+				        		<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+				        		<div class="red_social">
+				        			<a href="">
+				        				<img src="img/instagram.png" alt="">
+				        				<div class="des_redsocial">
+				        					<h5 class="nombre_red">Club Cienciano</h5>
+				        					<p class="fechapublicada">11-02-20</p>
+				        				</div>
+				        			</a>
+				        		</div>
+				        	</a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="">
+				        		<img src="img/foto_video.png" alt="">
+				        		<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+				        		<div class="red_social">
+				        			<a href="">
+				        				<img src="img/instagram.png" alt="">
+				        				<div class="des_redsocial">
+				        					<h5 class="nombre_red">Club Cienciano</h5>
+				        					<p class="fechapublicada">11-02-20</p>
+				        				</div>
+				        			</a>
+				        		</div>
+				        	</a>
+				        </div>
+				        <div class="swiper-slide">
+				        	<a href="">
+				        		<img src="img/foto_video.png" alt="">
+				        		<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+				        		<div class="red_social">
+				        			<a href="">
+				        				<img src="img/instagram.png" alt="">
+				        				<div class="des_redsocial">
+				        					<h5 class="nombre_red">Club Cienciano</h5>
+				        					<p class="fechapublicada">11-02-20</p>
+				        				</div>
+				        			</a>
+				        		</div>
+				        	</a>
+				        </div>
+				    </div>
+				    <!-- Add Arrows -->
+				    <div class="swiper-button-next"></div>
+				    <div class="swiper-button-prev"></div>
+				</div>	
+				<script src="js/swiper.min.js"></script>
+
+		  <!-- Initialize Swiper -->
+				<script>
+				    var swiper = new Swiper('.swiper-container', {
+				      slidesPerView: 3,
+				      spaceBetween: 30,
+				      slidesPerGroup: 3,
+				      loop: true,
+				      loopFillGroupWithBlank: true,
+				      pagination: {
+				        el: '.swiper-pagination',
+				        clickable: true,
+				      },
+				      navigation: {
+			        nextEl: '.swiper-button-next',
+				        prevEl: '.swiper-button-prev',
+				      },
+				    });
+				</script>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section class="recomendacion">
+ 		<div class="contenedor">
+ 			<div class="subtitulo">
+ 				<h2 class="subtitulos_section dark">cienciano recomienda</h2>
+ 				<a class="texto_subtitulo" href="">Ver todos las recomendaciones</a>
+ 			</div> 
+ 			<div class="row flew_wrap">
+ 				<div class="col-4">
+ 					<img class="back_inka" src="img/banner_compra.png" alt="">
+ 					<div class="item_recomendacion back_red">
+ 						<p>Camiseta 2020 compra
+						online 30% Dscto</p>
+ 						<a class="back_white" href="#">
+ 							Compra Ahora
+ 						</a>
+ 					</div>
+ 				</div>
+ 				<div class="col-4">
+ 					<img class="back_inka" src="img/banner_compra.png" alt="">
+ 					<div class="item_recomendacion back_dark">
+ 						<p>Camiseta 2020 compra
+						online 30% Dscto</p>
+ 						<a class="back_red" href="#">
+ 							ver mas
+ 						</a>
+ 					</div>
+ 				</div>
+				<div class="col-4">
+ 					<img class="back_inka" src="img/banner_compra.png" alt="">
+ 					<div class="item_recomendacion back_red">
+ 						<p>Camiseta 2020 compra
+						online 30% Dscto</p>
+ 						<a class="back_white" href="#">
+ 							ver mas
+ 						</a>
+ 					</div>
+ 				</div>
+ 				<div class="col-4">
+ 					<img class="back_inka" src="img/banner_compra.png" alt="">
+ 					<div class="item_recomendacion back_dark">
+ 						<p>Camiseta 2020 compra
+						online 30% Dscto</p>
+ 						<a class="back_red" href="#">
+ 							ver mas
+ 						</a>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</section>
+ 	<section class="auspiciadores">
+ 		<div class="contenedor">
+ 			<div class="subtitulo">
+				<h2 class="subtitulos_section dark">AUSPICIADORES OFICIALES</h2>
+				<a class="texto_subtitulo" href="">Ver todos las recomendaciones</a>
+			</div> 
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">			     
+			        	<img src="img/logo-new-atletic@3x.png" alt="">
+			        </div>	
+			        <div class="swiper-slide">			     
+			        	<img src="img/logo-new-atletic@3x.png" alt="">
+			        </div>
+			        <div class="swiper-slide">			     
+			        	<img src="img/logo-new-atletic@3x.png" alt="">
+			        </div>
+			        <div class="swiper-slide">			     
+			        	<img src="img/logo-new-atletic@3x.png" alt="">
+			        </div>
+			        <div class="swiper-slide">			     
+			        	<img src="img/logo-new-atletic@3x.png" alt="">
+			        </div>		     
+			    </div>
+			</div>	
+			<script src="js/swiper.min.js"></script>
+
+		  <!-- Initialize Swiper -->
+			<script>
+			    var swiper = new Swiper('.swiper-container', {
+			      slidesPerView: 3,
+			      spaceBetween: 30,
+			      slidesPerGroup: 3,
+			      loop: true,
+			      loopFillGroupWithBlank: true,
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+		        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+			</script>
+ 		</div>
+
+ 	</section>
  	<footer>
+ 		<div class="contenedor">
+ 			<div class="row flew_wrap">
+ 				<img class="col-5" src="img/LOGO-BLANCO-CIENCIANO_2@3x.png" alt="">
+		 		<div class="footer_items">
+		 			<h2>Categorias</h2>
+		 			<ul>
+		 				<li>entradas</li>
+		 				<li>noticias</li>
+		 				<li>la red card</li>
+		 			</ul>
+		 		</div>
+		 		<div class="footer_items col-5">
+		 			<h2>Categorias</h2>
+		 			<ul>
+		 				<li>entradas</li>
+		 				<li>noticias</li>
+		 				<li>la red card</li>
+		 			</ul>
+		 		</div>
+		 		<div class="footer_items col-5">
+		 			<h2>Categorias</h2>
+		 			<ul>
+		 				<li>entradas</li>
+		 				<li>noticias</li>
+		 				<li>la red card</li>
+		 			</ul>
+		 		</div>
+		 		<div class="footer_items col-5">
+		 			<h2>Categorias</h2>
+		 			<ul>
+		 				<li>entradas</li>
+		 				<li>noticias</li>
+		 				<li>la red card</li>
+		 			</ul>
+		 		</div>
+		 		<div class="footer_items col-5">
+		 			<h2>Categorias</h2>
+		 			<ul>
+		 				<li>entradas</li>
+		 				<li>noticias</li>
+		 				<li>la red card</li>
+		 			</ul>
+		 		</div>
+ 			</div>
+ 		</div>
+
  		
+
  	</footer>
  </body>
  </html>
