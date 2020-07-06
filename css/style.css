@@ -551,6 +551,7 @@ section.jugadores .row {
   background-color: white;
   height: 400px;
   overflow: hidden;
+  padding: 0 84px;
 }
 section.jugadores .row .col {
   width: 50%;
@@ -603,4 +604,172 @@ section.jugadores .row .col.izq .col-4 a.back_red {
 }
 section.jugadores .row .col.izq .col-4 a.back_red i.fas.fa-chevron-right {
   display: block;
+}
+section.jugadores .row .col.der {
+  float: right;
+}
+section.jugadores .row .col.der .list_estadistica {
+  padding: 0 47px;
+}
+section.jugadores .row .col.der .list_estadistica h3 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+}
+section.jugadores .row .col.der .list_estadistica ul li {
+  display: flex;
+  justify-content: space-evenly;
+}
+section.jugadores .row .col.der .list_estadistica ul li h4 {
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 3.48;
+  letter-spacing: 0.23px;
+  text-align: left;
+  color: #a7a7a7;
+}
+section.jugadores .row .col.der .list_estadistica ul li p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 3.33;
+  letter-spacing: 0.24px;
+  text-align: left;
+  color: #000000;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores {
+  overflow-y: scroll;
+  max-height: 400px;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores li {
+  display: flex;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores li img {
+  width: 65.5px;
+  height: 88px;
+  object-fit: contain;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores li h6 {
+  font-size: 13px;
+  font-weight: 800;
+  text-align: left;
+  color: #000000;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores li .nombres_jugador {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores li .nombres_jugador .posicion {
+  display: flex;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores li .nombres_jugador .posicion p {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #a8a8a8;
+}
+section.jugadores .row .col.der .col-2 .lista_jugadores li .nombres_jugador .posicion p.numerolist_jugador {
+  padding-right: 7px;
+  border-right: 2px solid #a8a8a8;
+  margin-right: 7px;
+}
+
+section.estadisticas {
+  background: #f5f3f3;
+  height: 600px;
+}
+section.estadisticas .contenedor .row {
+  margin-top: 50px;
+}
+section.estadisticas .contenedor .row .col-4 {
+  padding: 40px;
+}
+section.estadisticas .contenedor .row .col-4 h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 2.86;
+  text-align: left;
+  color: #aaaaaa;
+  position: a;
+}
+section.estadisticas .contenedor .row .col-4 .dato_jugador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section.estadisticas .contenedor .row .col-4 .dato_jugador .nombre_estadistica h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+}
+section.estadisticas .contenedor .row .col-4 .dato_jugador .nombre_estadistica p {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #dd1c22;
+}
+section.estadisticas .contenedor .row .col-4 .dato_jugador img {
+  width: 86px;
+}
+section.estadisticas .contenedor .row .col-4 ul li {
+  border-top: 1px solid #c8c8c8;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+section.estadisticas .contenedor .row .col-4 ul li h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #000000;
+}
+section.estadisticas .contenedor .row .col-4 ul li p {
+  font-size: 13px;
+  font-weight: 800;
+  color: #dd1c22;
+}
+
+section.banner_compra {
+  background-color: black;
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+section.banner_compra:before {
+  content: "";
+  width: 200px;
+  height: 100%;
+  background: #b40208;
+  transform: skew(-50deg);
+  position: absolute;
+  right: 30%;
+}
+section.banner_compra .contenedor .row .col.izq {
+  color: white;
+  text-align: center;
+}
+section.banner_compra .contenedor .row .col.izq img {
+  width: 78px;
+  position: absolute;
+}
+section.banner_compra .contenedor .row .col.izq h2 {
+  font-size: 32px;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.25;
+}
+section.banner_compra .contenedor .row .col.izq a {
+  width: 178px;
+  background-color: #dd1c22;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: auto;
+  margin-top: 25px;
+}
+section.banner_compra .contenedor .row .col.der {
+  float: right;
+}
+section.banner_compra .contenedor .row .col.der img {
+  width: 300px;
+  position: absolute;
+  bottom: -25px;
 }

@@ -573,6 +573,7 @@ section.jugadores{
 		background-color: white;
 		height: 400px;
 		overflow: hidden;
+		padding: 0 84px;
 		.col{
 			width: 50%;
 			&.izq{
@@ -624,6 +625,194 @@ section.jugadores{
 					}
 				}				
 			}
+			&.der{
+				float: right;
+				.list_estadistica{
+					padding: 0 47px;
+					h3 {
+					    font-size: 14px;
+					    text-align: center;
+					    margin-top: 50px;
+					}
+					ul{
+						li{
+							display: flex;
+							justify-content: space-evenly;
+							h4{
+								font-size: 11.5px;
+								font-weight: 500;
+								line-height: 3.48;
+								letter-spacing: 0.23px;
+								text-align: left;
+								color: #a7a7a7;
+							}
+							p{
+								  font-size: 12px;
+								  font-weight: 700;
+								  line-height: 3.33;
+								  letter-spacing: 0.24px;
+								  text-align: left;
+								  color: #000000;
+							}
+						}
+					}
+				}
+				.col-2{
+					.lista_jugadores{
+						overflow-y: scroll;
+						max-height: 400px;
+						li{
+							display: flex;
+							img{
+								width: 65.5px;
+								height: 88px;
+								object-fit: contain;
+							}
+							h6{
+							  	font-size: 13px;
+							  	font-weight: 800;
+							 	text-align: left;
+							  	color: #000000;
+							}
+							.nombres_jugador{
+								margin-top: 20px;
+								margin-left: 20px;
+								.posicion {
+								    display: flex;
+								    p{			
+									    font-size: 12px;
+									    font-weight: 500;
+									    text-align: left;
+									    color: #a8a8a8;
+									    &.numerolist_jugador{
+									    	padding-right: 7px;
+									    	border-right: 2px solid #a8a8a8;
+									    	margin-right: 7px;
+									    }
+								    }
+								}
+							}
+						}
+					}
+				}
+			}
 		}
+	}
+}
+section.estadisticas{
+	 background: #f5f3f3;
+	 height: 600px;
+	 .contenedor{
+	 	.row{
+	 		margin-top: 50px;
+	 		.col-4{
+	 			padding: 40px;
+	 			h3{
+					font-size: 14px;
+					font-weight: 600;
+					line-height: 2.86;
+					text-align: left;
+					color: #aaaaaa;
+					position: a
+	 			}
+	 			.dato_jugador{
+	 				display: flex;
+	 				align-items: center;
+	 				justify-content: space-between;
+	 				.nombre_estadistica{
+	 					h4{
+						  font-size: 15px;
+						  font-weight: bold;
+						  color: #000000;
+	 					}
+	 					p{
+						    font-size: 25px;
+						    font-weight: 500;
+						    line-height: 1.6;
+						    color: #dd1c22;
+	 					}
+	 				}
+	 				img{
+	 					width: 86px;
+	 				}
+
+	 			}
+	 			ul{
+	 				li{
+	 					border-top: 1px solid #c8c8c8;
+	 					padding: 15px 0;
+	 					display: flex;
+	 					justify-content: space-between;
+	 					h4{
+							font-size: 13px;
+							font-weight: 600;
+							color: #000000;
+	 					}
+	 					p{
+						  font-size: 13px;
+						  font-weight: 800;
+						  color: #dd1c22;
+	 					}
+	 				}
+	 			}
+
+	 		}
+	 	}
+	 }
+}
+section.banner_compra{
+	background-color: black;
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+	&:before{
+		content: '';
+		width: 200px; 
+	    height: 100%; 
+	    background: #b40208;
+	    -webkit-transform: skew(-50deg);
+	    -moz-transform: skew(-50deg);
+	    -ms-transform: skew(-50deg);
+	    -o-transform: skew(-50deg);
+	    transform: skew(-50deg);
+	    position: absolute;
+   		right: 30%;
+	}
+	.contenedor{
+		.row{
+			.col.izq{
+				color: white;
+				text-align: center;
+				img{
+					width: 78px;
+					position: absolute;
+				}
+				h2{
+					  font-size: 32px;
+					  font-weight: 800;
+					  font-style: italic;
+					  line-height: 1.25;
+				}
+				a{
+					width: 178px;
+					background-color: #dd1c22;
+					display: flex;
+					justify-content: space-between;
+					padding: 10px 20px;
+					margin: auto;
+    				margin-top: 25px;
+				}
+			}
+			.col.der{
+				float: right;
+				img{
+					width: 300px;
+				    position: absolute;
+				    bottom: -25px;
+				}
+
+			}
+		}
+
 	}
 }
