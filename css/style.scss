@@ -13,6 +13,7 @@ ui,ol,li{
 a{
 	text-decoration: unset;
 	color: unset;
+	display: block;
 	&.texto_subtitulo{
 		color: #7e7e7e;
 		font-size: 11.5px;
@@ -23,6 +24,9 @@ img{
 	width: 100%;
 	display: block;
 }
+h1,h2,h3,h4,h5,h6,p{
+	font-family: 'Poppins', sans-serif;
+}
 h1{
 	font-size: 48px;
 	text-transform: uppercase;
@@ -32,7 +36,7 @@ h1{
 h2{
 	font-size: 27px;
 	line-height: 38px;
-	font-weight: 500;
+	font-weight: 600;
 	 &.subtitulos_section{
 	 	font-size: 25px;
 	 	text-transform: uppercase;
@@ -47,16 +51,18 @@ h2{
 	 	
 	 }
 }
+h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
 h4{
 	font-size: 30px;
-	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
 }
 p{
 	font-size: 11px;
 	line-height: 17px;
 	font-weight: 400;
-	font-family: 'Poppins', sans-serif;
 	&.nombre_equipo{
 		margin: 0 17px;
 	}
@@ -77,6 +83,7 @@ p{
 .contenedor{
 	width: calc(100% - 140px);
 	margin: 0 auto;
+	padding: 40px 0;
 	.row{
 		.col{
 			&.izq{
@@ -144,6 +151,7 @@ a.back_transparent{
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
 }
 header{
 	height: 95px;
@@ -301,4 +309,321 @@ section.banner_cinceano{
 		}
 
 	}	
+}
+section.partidos{
+	height: 390px;
+	.contenedor{
+		.row{
+			
+			.items_partido{
+				.item_partido{
+					padding: 35px;
+					.logos_equipo {
+					    display: flex;
+					    align-items: center;
+					    position: relative;
+					    padding-bottom: 10px;
+					    img{
+					    	width: auto;
+					    	height: 50px;
+					    	margin-right: 17px;
+					    }
+					    .resultado{
+					    	display: flex;
+					    	align-items: center;
+					    	position: absolute;
+					    	bottom: 0;
+					    	right: 0;
+					    }
+					}
+					.datos_partido{
+						padding-top: 14px;
+						h4.nombre_liga {
+						    font-size: 12px;
+						    color: #bebebe;
+						    margin-bottom: 14px;
+						}
+						p{
+							color: #686868;
+							font-size: 13px;
+						}
+						a.boton_vermas {
+						    color: #dd1c22;
+						    margin-top: 27px;
+						    position: relative;
+						    bottom: -20px;
+						    font-size: 12px;
+						    i.fas.fa-chevron-right {
+							    padding: 0 20px;
+							}
+						}
+						a.boton_entradas{
+							width: 105px;
+							text-align: center;
+							text-transform: uppercase;
+							padding: 10px 0;
+							float: right;
+						}
+					}
+					&.porjugar{
+						.botones{
+							color: #d2d2d2;
+							a.boton_vermas{
+								color: #d2d2d2;
+							}
+							.boton_entradas{
+								display: none;
+							}
+						}
+					}
+					&.jugado{
+						.boton_entradas{
+							display: none;
+						}
+						.logos_equipo{
+						border-bottom: 2px solid #dd1c22; 
+						}
+					}
+				}
+			}
+		}
+	}
+}
+section.videos{
+	position: relative;
+	.row{
+		padding: 36px 38px;
+	}
+	.swiper-container{
+		
+		.swiper-slide{
+			max-width: 261px;
+			p{
+				background-color: transparent;
+				color: white;
+				text-align: left;
+				margin: 15px 0;
+				font-size: 13px;
+			}
+			.tiempovideo{
+				display: flex;
+				align-items: center;
+				.logo_play {
+				    width: 15px;
+				    height: 15px;
+				    border-radius: 50%;
+				    border: 2px solid white;
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    i.fas.fa-caret-right {
+					    color: white;
+					    font-size: 13px;
+					}
+
+				}
+				span{
+					color: white;
+					font-size: 13px;
+				}
+				p{
+					margin: 0 8px;
+				}
+			}
+		}
+	}
+}
+section.noticias{
+    background: #f5f3f3;
+	.contenedor{
+		.row{
+			display: flex;
+			justify-content: space-between;
+			.noticias{
+				background-color: white;
+			}
+			.col-2{
+				width: 49%;
+				display: flex;
+				height: 342px;
+				background-color: white;
+				margin-bottom: 25px;
+				.col.izq{
+					overflow: hidden;
+					img{
+						height: 100%;
+						width: auto;
+						position: relative;
+						left: -70px;
+
+					}
+				}
+				.col.der{
+					padding: 57px 38px;
+					position: relative;
+					h2{
+						font-size: 17px;
+						font-weight: 700;
+						line-height: 23px;
+						padding-bottom: 16px;
+						position: relative;
+						margin-bottom: 30px;
+						&:after{
+							content: '';
+							width: 61px;
+							height: 2px;
+							background-color: #dd1c22;
+							position: absolute;
+							left: 0;
+							bottom: 0;
+
+						}
+					}
+					p.texto_noticia{
+						color: #7e7e7e;
+
+					}
+					.publicacion_hora {
+					    display: flex;
+					    margin-top: 50px;
+					}
+				}
+			}
+			.col-4{
+				flex-direction: column;
+				width: 24%;
+				display: flex;
+				height: auto;
+				.col.top{
+					img{
+
+					}
+				}
+				.col.bot{
+					padding: 24px;
+					position: relative;
+					h2{
+						font-size: 17px;
+						font-weight: 700;
+						line-height: 23px;
+						padding-bottom: 16px;
+						position: relative;
+						margin-bottom: 40px;
+						&:after{
+							content: '';
+							width: 61px;
+							height: 2px;
+							background-color: #dd1c22;
+							position: absolute;
+							left: 0;
+							bottom: 0;
+
+						}
+					}
+					p.texto_noticia{
+						color: #7e7e7e;
+
+					}
+					.publicacion_hora {
+					    display: flex;
+					    align-items: baseline;
+					    justify-content: space-between;
+					    margin-top: 25px;
+					    .entrevistador{
+							display: flex;
+							.perfil{
+								width: 38px;
+								height: 38px;
+								border-radius: 50%;
+								overflow: hidden;
+								margin-right: 6px;
+								position: relative;
+								img{
+									position: absolute;
+									top: 0;
+									left: 0;
+									width: auto;
+									height: 100%;								}
+							}
+							.datos_perfil {
+						    
+							}
+						}
+					}
+					
+				}
+			}
+		}
+		a.back_transparent{
+			width: 189px;
+			margin: 0 auto;
+			text-transform: uppercase;
+			font-size: 12px;
+			padding: 9px 0;
+			margin-top: 25px;
+		}
+	}
+}
+section.jugadores{
+	background-color: #f5f3f3;
+	.contenedor{
+		
+	}
+	.row{
+		background-color: white;
+		height: 400px;
+		overflow: hidden;
+		.col{
+			width: 50%;
+			&.izq{
+				float: left;
+				display: flex;
+				img{
+					width: 400px;
+					float: left;
+				}
+				.col-4{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					p{
+						font-size: 40px;
+						color: #dd1c22;
+						position: relative;
+						&:before{
+							content: '#';
+							top: -10px;
+							font-size: 21px;
+						}
+					}
+					h2{
+						font-size: 37px;
+						line-height: 40px;
+						text-transform: uppercase;
+						margin-top: 20px;
+						font-weight: 800;
+					}			
+					h3{
+						text-transform: uppercase;
+						font-weight: 600;
+						font-size: 12px;
+						letter-spacing: .24px;
+					}	
+					i.fas.fa-chevron-right{
+						display: none;
+					}
+					a.back_red {
+					    width: 98px;
+					    display: flex;
+					    justify-content: space-between;
+					    padding: 7px;
+					    overflow: hidden;
+					    i.fas.fa-chevron-right{
+					    	display: block;
+					    }
+					}
+				}				
+			}
+		}
+	}
 }

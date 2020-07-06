@@ -16,6 +16,7 @@ ui, ol, li {
 a {
   text-decoration: unset;
   color: unset;
+  display: block;
 }
 a.texto_subtitulo {
   color: #7e7e7e;
@@ -28,6 +29,10 @@ img {
   display: block;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 48px;
   text-transform: uppercase;
@@ -38,7 +43,7 @@ h1 {
 h2 {
   font-size: 27px;
   line-height: 38px;
-  font-weight: 500;
+  font-weight: 600;
 }
 h2.subtitulos_section {
   font-size: 25px;
@@ -53,9 +58,13 @@ h2.subtitulos_section.white {
   font-weight: 400;
 }
 
+h3 {
+  font-size: 13px;
+  font-weight: 700;
+}
+
 h4 {
   font-size: 30px;
-  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
@@ -63,7 +72,6 @@ p {
   font-size: 11px;
   line-height: 17px;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
 }
 p.nombre_equipo {
   margin: 0 17px;
@@ -85,6 +93,7 @@ p.fecha {
 .contenedor {
   width: calc(100% - 140px);
   margin: 0 auto;
+  padding: 40px 0;
 }
 .contenedor .row .col.izq {
   width: 50%;
@@ -156,6 +165,7 @@ a.back_transparent:hover {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
 }
 
 header {
@@ -305,4 +315,292 @@ section.banner_cinceano .fechas_futbol .siguiente_partido a.boton_hover {
   width: 150px;
   border: 2px solid red;
   margin-left: 30px;
+}
+
+section.partidos {
+  height: 390px;
+}
+section.partidos .contenedor .row .items_partido .item_partido {
+  padding: 35px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .logos_equipo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .logos_equipo img {
+  width: auto;
+  height: 50px;
+  margin-right: 17px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .logos_equipo .resultado {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+section.partidos .contenedor .row .items_partido .item_partido .datos_partido {
+  padding-top: 14px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .datos_partido h4.nombre_liga {
+  font-size: 12px;
+  color: #bebebe;
+  margin-bottom: 14px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .datos_partido p {
+  color: #686868;
+  font-size: 13px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .datos_partido a.boton_vermas {
+  color: #dd1c22;
+  margin-top: 27px;
+  position: relative;
+  bottom: -20px;
+  font-size: 12px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .datos_partido a.boton_vermas i.fas.fa-chevron-right {
+  padding: 0 20px;
+}
+section.partidos .contenedor .row .items_partido .item_partido .datos_partido a.boton_entradas {
+  width: 105px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  float: right;
+}
+section.partidos .contenedor .row .items_partido .item_partido.porjugar .botones {
+  color: #d2d2d2;
+}
+section.partidos .contenedor .row .items_partido .item_partido.porjugar .botones a.boton_vermas {
+  color: #d2d2d2;
+}
+section.partidos .contenedor .row .items_partido .item_partido.porjugar .botones .boton_entradas {
+  display: none;
+}
+section.partidos .contenedor .row .items_partido .item_partido.jugado .boton_entradas {
+  display: none;
+}
+section.partidos .contenedor .row .items_partido .item_partido.jugado .logos_equipo {
+  border-bottom: 2px solid #dd1c22;
+}
+
+section.videos {
+  position: relative;
+}
+section.videos .row {
+  padding: 36px 38px;
+}
+section.videos .swiper-container .swiper-slide {
+  max-width: 261px;
+}
+section.videos .swiper-container .swiper-slide p {
+  background-color: transparent;
+  color: white;
+  text-align: left;
+  margin: 15px 0;
+  font-size: 13px;
+}
+section.videos .swiper-container .swiper-slide .tiempovideo {
+  display: flex;
+  align-items: center;
+}
+section.videos .swiper-container .swiper-slide .tiempovideo .logo_play {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.videos .swiper-container .swiper-slide .tiempovideo .logo_play i.fas.fa-caret-right {
+  color: white;
+  font-size: 13px;
+}
+section.videos .swiper-container .swiper-slide .tiempovideo span {
+  color: white;
+  font-size: 13px;
+}
+section.videos .swiper-container .swiper-slide .tiempovideo p {
+  margin: 0 8px;
+}
+
+section.noticias {
+  background: #f5f3f3;
+}
+section.noticias .contenedor .row {
+  display: flex;
+  justify-content: space-between;
+}
+section.noticias .contenedor .row .noticias {
+  background-color: white;
+}
+section.noticias .contenedor .row .col-2 {
+  width: 49%;
+  display: flex;
+  height: 342px;
+  background-color: white;
+  margin-bottom: 25px;
+}
+section.noticias .contenedor .row .col-2 .col.izq {
+  overflow: hidden;
+}
+section.noticias .contenedor .row .col-2 .col.izq img {
+  height: 100%;
+  width: auto;
+  position: relative;
+  left: -70px;
+}
+section.noticias .contenedor .row .col-2 .col.der {
+  padding: 57px 38px;
+  position: relative;
+}
+section.noticias .contenedor .row .col-2 .col.der h2 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  padding-bottom: 16px;
+  position: relative;
+  margin-bottom: 30px;
+}
+section.noticias .contenedor .row .col-2 .col.der h2:after {
+  content: "";
+  width: 61px;
+  height: 2px;
+  background-color: #dd1c22;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+section.noticias .contenedor .row .col-2 .col.der p.texto_noticia {
+  color: #7e7e7e;
+}
+section.noticias .contenedor .row .col-2 .col.der .publicacion_hora {
+  display: flex;
+  margin-top: 50px;
+}
+section.noticias .contenedor .row .col-4 {
+  flex-direction: column;
+  width: 24%;
+  display: flex;
+  height: auto;
+}
+section.noticias .contenedor .row .col-4 .col.bot {
+  padding: 24px;
+  position: relative;
+}
+section.noticias .contenedor .row .col-4 .col.bot h2 {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 23px;
+  padding-bottom: 16px;
+  position: relative;
+  margin-bottom: 40px;
+}
+section.noticias .contenedor .row .col-4 .col.bot h2:after {
+  content: "";
+  width: 61px;
+  height: 2px;
+  background-color: #dd1c22;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+section.noticias .contenedor .row .col-4 .col.bot p.texto_noticia {
+  color: #7e7e7e;
+}
+section.noticias .contenedor .row .col-4 .col.bot .publicacion_hora {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+section.noticias .contenedor .row .col-4 .col.bot .publicacion_hora .entrevistador {
+  display: flex;
+}
+section.noticias .contenedor .row .col-4 .col.bot .publicacion_hora .entrevistador .perfil {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 6px;
+  position: relative;
+}
+section.noticias .contenedor .row .col-4 .col.bot .publicacion_hora .entrevistador .perfil img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+section.noticias .contenedor a.back_transparent {
+  width: 189px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 9px 0;
+  margin-top: 25px;
+}
+
+section.jugadores {
+  background-color: #f5f3f3;
+}
+section.jugadores .row {
+  background-color: white;
+  height: 400px;
+  overflow: hidden;
+}
+section.jugadores .row .col {
+  width: 50%;
+}
+section.jugadores .row .col.izq {
+  float: left;
+  display: flex;
+}
+section.jugadores .row .col.izq img {
+  width: 400px;
+  float: left;
+}
+section.jugadores .row .col.izq .col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.jugadores .row .col.izq .col-4 p {
+  font-size: 40px;
+  color: #dd1c22;
+  position: relative;
+}
+section.jugadores .row .col.izq .col-4 p:before {
+  content: "#";
+  top: -10px;
+  font-size: 21px;
+}
+section.jugadores .row .col.izq .col-4 h2 {
+  font-size: 37px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-weight: 800;
+}
+section.jugadores .row .col.izq .col-4 h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.24px;
+}
+section.jugadores .row .col.izq .col-4 i.fas.fa-chevron-right {
+  display: none;
+}
+section.jugadores .row .col.izq .col-4 a.back_red {
+  width: 98px;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  overflow: hidden;
+}
+section.jugadores .row .col.izq .col-4 a.back_red i.fas.fa-chevron-right {
+  display: block;
 }
