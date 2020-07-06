@@ -26,9 +26,13 @@ img{
 h1{
 	font-size: 48px;
 	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 72px;
 }
 h2{
 	font-size: 27px;
+	line-height: 38px;
+	font-weight: 500;
 	 &.subtitulos_section{
 	 	font-size: 25px;
 	 	text-transform: uppercase;
@@ -38,15 +42,33 @@ h2{
 	 	}
 	 	&.white{
 	 		color: white;
+	 		font-weight: 400;
 	 	}
+	 	
 	 }
 }
+h4{
+	font-size: 30px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+}
 p{
+	font-size: 11px;
+	line-height: 17px;
+	font-weight: 400;
+	font-family: 'Poppins', sans-serif;
+	&.nombre_equipo{
+		margin: 0 17px;
+	}
+
 	&.marcador{
 		color: #dd1c22;
 		font-size: 20px;
 		line-height: 30px;
 	}
+	&.fecha{
+	 		margin-right: 8px;
+	 	}
 }
 .flex_wrap{
 	display: flex;
@@ -116,4 +138,167 @@ a.back_transparent{
 }
 .subtitulo{
 	padding-left: 12px;
+}
+.back_position{
+	z-index: -100;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+header{
+	height: 95px;
+	position: fixed;
+	width: 100%;
+	.contenedor{
+		height: 100%;
+		.row{
+			height: 100%;
+			position: relative;
+			align-items: center;
+			display: flex;
+			nav{
+				width: 50%;
+				display: flex;
+				float: left;
+				.nav_movil{
+					i.fas.fa-bars {
+					    font-size: 27px;
+					    color: white;
+					}
+				}
+				ul{
+					display: flex;
+					align-items: center;
+					li{
+						margin-left: 42px;
+						text-transform: uppercase;
+						opacity: .7;
+						position: relative;
+						color: white;
+						&.active{
+							opacity: 1;
+							&:after{
+							    content: "";
+							    width: 42px;
+							    background-color: #eec159;
+							    height: 3px;
+							    bottom: -5px;
+							    position: absolute;
+							    left: 0;
+							}	
+						}
+					}
+
+				}
+			}
+			.logo_img{
+				width: 46px;
+				position: absolute;
+				left: calc(50% - 23px);
+				top: 14px;
+			}
+			.acceso{
+				width: 50%;
+				display: flex;
+				justify-content: flex-end;
+				.cuenta{
+					p{
+						color: white;
+						opacity: .7;
+						margin-left: 9px;
+					}
+				}
+				.buscador{
+					margin-left: 23px;
+					i.fas.fa-search {
+					    color: white;
+					    opacity: .7;
+					}
+					input[type="search"] {
+					    border: unset;
+					    background: transparent;
+					    color: white;
+					    margin-left: 9px;
+					    &::placeholder{
+							color: white;
+							opacity: .7;	
+					    }
+					}
+				}
+			}
+		}
+	}
+}
+section.banner_cinceano{
+	height: 100vh;
+	img.back_position{
+		height: 100%;
+	}
+	.contenedor{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		.col.izq{
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			float: left;
+			p,h1,h2{
+				color: white;
+			}
+
+			a{
+				color: white;
+				background-color: #dd1c22;
+				width: 187px;
+				padding: 15px 27px; 
+				display: flex;
+				justify-content: space-between;
+				margin-top: 28px;
+				
+
+			}
+
+		}
+	}
+	.fechas_futbol{
+		position: absolute;
+		background-color: rgba(0,0,0,.55);
+		bottom: 0;
+		width: 100%;
+		height: 71px;
+		overflow: hidden;
+		img{
+			width: 40px;
+		}
+		.ultimo_partido,.siguiente_partido{
+			display: flex;
+			color: white;
+			align-items: center;
+			justify-content: flex-end;
+			min-height: 71px;
+			padding: 0 33px;
+			.local,.visitante{
+				display: flex;
+				align-items: center;
+			}
+			span{
+				margin: 0 8px;
+			}
+		}
+		.siguiente_partido{
+			justify-content: flex-start;
+			a.boton_hover{
+				font-size: 12px;
+			    text-transform: uppercase;
+			    padding: 11px 23px;
+			    display: flex;
+			    justify-content: space-between;
+			    width: 150px;
+			    border: 2px solid red;
+			    margin-left: 30px;
+			}
+		}
+
+	}	
 }

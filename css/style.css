@@ -31,10 +31,14 @@ img {
 h1 {
   font-size: 48px;
   text-transform: uppercase;
+  font-weight: 700;
+  line-height: 72px;
 }
 
 h2 {
   font-size: 27px;
+  line-height: 38px;
+  font-weight: 500;
 }
 h2.subtitulos_section {
   font-size: 25px;
@@ -46,12 +50,31 @@ h2.subtitulos_section.dark {
 }
 h2.subtitulos_section.white {
   color: white;
+  font-weight: 400;
 }
 
+h4 {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+p.nombre_equipo {
+  margin: 0 17px;
+}
 p.marcador {
   color: #dd1c22;
   font-size: 20px;
   line-height: 30px;
+}
+p.fecha {
+  margin-right: 8px;
 }
 
 .flex_wrap {
@@ -126,4 +149,160 @@ a.back_transparent:hover {
 
 .subtitulo {
   padding-left: 12px;
+}
+
+.back_position {
+  z-index: -100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header {
+  height: 95px;
+  position: fixed;
+  width: 100%;
+}
+header .contenedor {
+  height: 100%;
+}
+header .contenedor .row {
+  height: 100%;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+header .contenedor .row nav {
+  width: 50%;
+  display: flex;
+  float: left;
+}
+header .contenedor .row nav .nav_movil i.fas.fa-bars {
+  font-size: 27px;
+  color: white;
+}
+header .contenedor .row nav ul {
+  display: flex;
+  align-items: center;
+}
+header .contenedor .row nav ul li {
+  margin-left: 42px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  position: relative;
+  color: white;
+}
+header .contenedor .row nav ul li.active {
+  opacity: 1;
+}
+header .contenedor .row nav ul li.active:after {
+  content: "";
+  width: 42px;
+  background-color: #eec159;
+  height: 3px;
+  bottom: -5px;
+  position: absolute;
+  left: 0;
+}
+header .contenedor .row .logo_img {
+  width: 46px;
+  position: absolute;
+  left: calc(50% - 23px);
+  top: 14px;
+}
+header .contenedor .row .acceso {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .contenedor .row .acceso .cuenta p {
+  color: white;
+  opacity: 0.7;
+  margin-left: 9px;
+}
+header .contenedor .row .acceso .buscador {
+  margin-left: 23px;
+}
+header .contenedor .row .acceso .buscador i.fas.fa-search {
+  color: white;
+  opacity: 0.7;
+}
+header .contenedor .row .acceso .buscador input[type=search] {
+  border: unset;
+  background: transparent;
+  color: white;
+  margin-left: 9px;
+}
+header .contenedor .row .acceso .buscador input[type=search]::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+section.banner_cinceano {
+  height: 100vh;
+}
+section.banner_cinceano img.back_position {
+  height: 100%;
+}
+section.banner_cinceano .contenedor {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+section.banner_cinceano .contenedor .col.izq {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  float: left;
+}
+section.banner_cinceano .contenedor .col.izq p, section.banner_cinceano .contenedor .col.izq h1, section.banner_cinceano .contenedor .col.izq h2 {
+  color: white;
+}
+section.banner_cinceano .contenedor .col.izq a {
+  color: white;
+  background-color: #dd1c22;
+  width: 187px;
+  padding: 15px 27px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+section.banner_cinceano .fechas_futbol {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.55);
+  bottom: 0;
+  width: 100%;
+  height: 71px;
+  overflow: hidden;
+}
+section.banner_cinceano .fechas_futbol img {
+  width: 40px;
+}
+section.banner_cinceano .fechas_futbol .ultimo_partido, section.banner_cinceano .fechas_futbol .siguiente_partido {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 71px;
+  padding: 0 33px;
+}
+section.banner_cinceano .fechas_futbol .ultimo_partido .local, section.banner_cinceano .fechas_futbol .ultimo_partido .visitante, section.banner_cinceano .fechas_futbol .siguiente_partido .local, section.banner_cinceano .fechas_futbol .siguiente_partido .visitante {
+  display: flex;
+  align-items: center;
+}
+section.banner_cinceano .fechas_futbol .ultimo_partido span, section.banner_cinceano .fechas_futbol .siguiente_partido span {
+  margin: 0 8px;
+}
+section.banner_cinceano .fechas_futbol .siguiente_partido {
+  justify-content: flex-start;
+}
+section.banner_cinceano .fechas_futbol .siguiente_partido a.boton_hover {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 11px 23px;
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  border: 2px solid red;
+  margin-left: 30px;
 }
