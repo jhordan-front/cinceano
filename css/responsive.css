@@ -1,0 +1,195 @@
+@media screen and (min-width: 300px) and (max-width: 1360px){
+	header .contenedor .row nav ul {
+    display: none;
+	}
+	section.banner_cinceano .contenedor .col.izq {
+    width: 100%;
+	}
+	h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 30px;
+	}
+	section.banner_cinceano .contenedor .col.izq a {
+    margin: auto;
+	}
+	.pag-top-ri {
+    bottom: 90px;
+    right: 180px;
+	}
+	#littleSwip .swiper-slide {
+    opacity: 0;
+	}
+	section.banner_cinceano .contenedor .col.izq h2 {
+    margin-bottom: 15px;
+	}
+	section.banner_cinceano .fechas_futbol {
+    height: auto;
+	}
+	.flew_wrap p {
+    font-size: 10px;
+	}
+	section.banner_cinceano .fechas_futbol .ultimo_partido, 
+	section.banner_cinceano .fechas_futbol .siguiente_partido {
+    padding: 0 10px;
+    width: 100%;
+	}
+	section.banner_cinceano .fechas_futbol .ultimo_partido, 
+	section.banner_cinceano .fechas_futbol .siguiente_partido  h4 {
+    font-size: 20px;
+    font-weight: 300;
+	}
+	.col-4 {
+    width: 100%;
+    float: left;
+	}
+	section.videos .row {
+    padding: 15px 0;
+	}
+	.videos .swiper-slide {
+    width: calc(50% - 30px);
+	}
+	.videos .swiper-slide.specialEdition {
+    width: calc(50% + 100px);
+	}
+	section.noticias .contenedor .row .col-2 .col.izq img {
+    height: auto;
+    left: 0;
+	}
+	section.noticias .contenedor .row .col.izq,section.noticias .contenedor .row .col.der {
+    width: 100%;
+    float: left;
+	}
+	section.noticias .contenedor .row .col-2 {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+	}
+	section.noticias .contenedor .row .col-4 {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    height: auto;
+	}
+	section.jugadores {
+    max-height: initial;
+	}
+	section.jugadores .row .col {
+    width: 100%;
+    flex-wrap: wrap;
+	}
+	section.jugadores .row .col.izq .col-4 {
+    height: auto;
+	}
+	.col-2 {
+    width: 100%;
+    float: left;
+	}
+	section.jugadores .row .col.der .list_estadistica {
+    height: auto;
+    border: 2px solid #e0e0e0;
+	}
+	section.jugadores .row .col.der .col-2 .lista_jugadores {
+    max-height: 300px;
+	}
+	section.banner_compra .contenedor .row .col.izq img {
+    top: -35px;
+    left: 10px;
+	}
+	section.banner_compra:before {
+    z-index: -10;
+	}
+	section.banner_compra .contenedor .row .col.izq h2 {
+    font-size: 20px;
+    position: relative;
+    top: 17px;
+	}
+	section.banner_compra .contenedor .row .col.izq a {
+    width: 163px;
+    background-color: #dd1c22;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+	}
+	section.banner_compra .contenedor .row .col.der img {
+    height: 184px;
+    position: absolute;
+    bottom: -30px;
+    width: auto;
+    z-index: 5;
+    opacity: .9;
+    right: -15px;
+	}
+	section.banner_compra .contenedor .row .col.izq {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+	}
+	section.redes_sociales .contenedor .swiper-container .swiper-wrapper .swiper-slide {
+    min-width: 100%;
+	}
+	section.auspiciadores .swiper-slide {
+    min-width: 40%;
+	}
+	.col-5{
+		width: 100%;
+	}
+	footer .col-5{
+		margin-top: 15px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1360px){
+	.col-4 {
+    width: 50%;
+    float: left;
+	}
+	section.noticias .contenedor .row .col-4 {
+    flex-direction: column;
+    width: 50%;
+    display: flex;
+    height: auto;
+	}
+	section.banner_cinceano {
+    height: 50vh;
+	}
+	section.banner_cinceano .fechas_futbol .ultimo_partido, section.banner_cinceano .fechas_futbol .siguiente_partido {
+    padding: 0 10px;
+    width: 50%;
+	}
+	section.noticias .contenedor .row .col-2 {
+    flex-direction: row;
+	}
+	section.jugadores .row .col.izq img {
+    width: 50%;
+	}
+	section.jugadores .col-2 {
+    width: 50%;
+    float: left;
+	}
+	section.banner_compra .contenedor .row .col.der img {
+    right: 50px;
+	}
+	section.redes_sociales .contenedor .swiper-container .swiper-wrapper .swiper-slide {
+    min-width: 50%;
+	}
+
+	.col-5 {
+    width: 50%;
+	}
+	img.col-5 {
+    width: 100%;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1360px){
+	header .contenedor .row nav ul {
+    display: flex;
+	}
+	.col-5 {
+    width: 25%;
+	}
+}
